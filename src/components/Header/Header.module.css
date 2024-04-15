@@ -1,0 +1,60 @@
+.header{
+    width: 100%;
+    height: 80px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title_logo{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 40px;
+    color: var(--white);
+    margin-left: 60px;
+}
+
+.nav_pages{
+    margin-right: 60px;
+}
+
+.nav_pages :link{
+    margin: 0 25px;
+}
+
+.nav_pages a{
+    font-size: 19px;
+}
+
+.navLinks{
+    position: relative;
+}
+
+.navLinks::after{
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    left: 0;
+    bottom: -2px;
+    background-color: var(--cyan-green);
+    transition: width 0.1s ease;
+}
+
+.navLinks:hover::after {
+    width: 100%;
+}
+
+.linkCadastrar{
+    padding: 12px 30px;
+    border: 2px solid var(--cyan-green);
+    transition: background-color 0.15s ease-in-out, color 0.15s ease-in-out;
+    color: var(--white);
+}
+
+.linkCadastrar:hover{
+    background-color: var(--cyan-green);
+    color: var(--black);
+}
+

@@ -1,0 +1,6 @@
+.slider_container{
+    width: 80vw;
+    height: 35vw;
+    margin-top: 80px;
+    background-image: linear-gradient(45deg, var(--pink-red),  var(--yellow));
+}
