@@ -1,0 +1,40 @@
+.table{
+    width: 60%;
+    height: 500px;
+    margin-top: 80px;
+    background-color: var(--dark-black);
+    border-collapse: collapse;
+    border: 2px solid var(--yellow);
+    font-size: 1.2em;
+
+    color: var(--white);
+    letter-spacing: 1px;
+}
+
+.table_caption{
+    text-align: left;
+    padding: 15px 0;
+}
+
+.table_a{
+    text-decoration:underline;
+}
+
+.table_thead{
+    height: 50px;
+    background-color: var(--yellow);
+    color: var(--black);
+}
+
+.table_tr{
+    text-align: center;
+    font-weight: normal;
+}
+
+.table_th{
+    border: 2px solid var(--yellow);
+}
+
+.table_td{
+    border: 2px solid var(--yellow);
+}

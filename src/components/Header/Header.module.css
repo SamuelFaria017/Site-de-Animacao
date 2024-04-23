@@ -10,7 +10,7 @@
 
 .title_logo{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 40px;
+    font-size: 3rem;
     color: var(--white);
     margin-left: 60px;
 }
@@ -24,7 +24,7 @@
 }
 
 .nav_pages a{
-    font-size: 19px;
+    font-size: 1.2rem;
 }
 
 .navLinks{
@@ -46,15 +46,34 @@
     width: 100%;
 }
 
-.linkCadastrar{
+.linkLogin{
     padding: 12px 30px;
     border: 2px solid var(--cyan-green);
     transition: background-color 0.15s ease-in-out, color 0.15s ease-in-out;
     color: var(--white);
 }
 
-.linkCadastrar:hover{
+.linkLogin:hover{
     background-color: var(--cyan-green);
     color: var(--black);
 }
 
+@media (max-width: 1450px) {
+    .nav_pages a{
+        font-size: 1rem;
+    }
+
+    .nav_pages{
+        margin-right: 40px;
+    }  
+}
+
+@media (max-width: 1350px) {
+    .nav_pages a{
+        font-size: 0.95rem;
+    }
+
+    .nav_pages{
+        margin-right: 20px;
+    }
+}

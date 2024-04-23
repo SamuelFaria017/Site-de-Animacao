@@ -1,0 +1,22 @@
+[
+    {
+        "id": 0,
+        "caminho_imagem": "../../assets/imgs/slides/Slide_0.jpg",
+        "titulo": "Oque é uma animação?",
+        "descricao": "Animação refere-se ao processo, segundo o qual cada fotograma de um filme é produzido individualmente, podendo ser gerado tanto por computação gráfica quanto fotografando uma imagem desenhada ou repetidamente, fazendo-se pequenas mudanças a um modelo, fotografando o resultado."
+    },
+
+    {
+        "id": 1,
+        "caminho_imagem": "../../assets/imgs/slides/Slide_1.jpg",
+        "titulo": "Como fazer uma animação?",
+        "descricao": "Antes de começar uma animação, trace todos os detalhes da história. Pense como será a aparência dos personagens, quais suas características e a narrativa em que estarão inseridos. Defina a história de vida do personagem anterior ao filme, o mundo no qual ele vive e as regras e dinâmicas desse lugar."
+    },
+
+    {
+        "id": 2,
+        "caminho_imagem": "../../assets/imgs/slides/Slide_2.jpg",
+        "titulo": "Oque é o traço de uma animação?",
+        "descricao": "O traço é dinâmico: mais forte em um lugar, mais fraco em outro; mais grosso em um pedaço, mais fino em outro. Isso dá vida ao desenho. Os contornos não são necessariamente pretos."
+    }
+]

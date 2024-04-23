@@ -18,7 +18,8 @@ export function Header(){
                 <NavLink style={navLinkStyles} className={styles.navLinks} to="/sobre">Sobre</NavLink>
                 <NavLink style={navLinkStyles} className={styles.navLinks} to="/12-principios-animacao">Pricípios animação</NavLink>
                 <NavLink style={navLinkStyles} className={styles.navLinks} to="/desenvolvedores">Desenvolvedores</NavLink>
-                <NavLink className={styles.linkCadastrar} to="/cadastro">Cadastro</NavLink>
+                <NavLink style={navLinkStyles} className={styles.navLinks} to="/recursos">Recursos</NavLink>
+                <NavLink className={styles.linkLogin} to="/login">Login</NavLink>
             </nav>
         </header>
     );

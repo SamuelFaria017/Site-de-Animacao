@@ -1,9 +1,11 @@
 :root {
   --black: #000;
+  --dark-gray: #0e0e0e;
   --white: #fff;
   --pink: #FF9398;
   --pink-red: #e1126e;
   --yellow: #ECD06F;
+  --strong-yellow: #FCFD02;
   --cyan-green: #01e0aa;
 
   font-family: Arial, Helvetica, sans-serif
