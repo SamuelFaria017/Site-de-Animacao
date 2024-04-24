@@ -4,11 +4,11 @@ import styles from './Home.module.css'
 import { Container } from '../../components/Container/Container';
 import { Header } from '../../components/Header/Header';
 
-import sliders from '../../json/db.json'
+import sliders from '../../json/db.json';
 
-import Slide_0 from '../../assets/imgs/slides/Slide_0.jpg'
-import Slide_1 from '../../assets/imgs/slides/Slide_1.jpg'
-import Slide_2 from '../../assets/imgs/slides/Slide_2.jpg'
+import Slide_0 from '../../assets/imgs/slides/Slide_0.jpg';
+import Slide_1 from '../../assets/imgs/slides/Slide_1.jpg';
+import Slide_2 from '../../assets/imgs/slides/Slide_2.jpg';
 
 export function Home() {
     const [indexSlider, setIndexSlider] = useState(0);
@@ -17,20 +17,17 @@ export function Home() {
     const tempo_de_espera = 6000; // 6000ms / 1000 = 6s
 
     const incrementarContador = () => {
-        setIndexSlider(indexSlider + 1);
+        setIndexSlider((prevIndex) => (prevIndex + 1) % sliders.length);
+    };
 
-        if (indexSlider >= (sliders.length - 1)){
-            setIndexSlider(0);
-        }
-
+    useEffect(() => {
         setImage([Slide_0, Slide_1, Slide_2][indexSlider]);
-      };
+    }, [indexSlider]);
 
-      useEffect(() => {
+    useEffect(() => {
         const idIntervalo = setInterval(incrementarContador, tempo_de_espera);
         return () => clearInterval(idIntervalo);
-      }, [indexSlider]);
-      
+    }, []);
 
     return(
         <>
