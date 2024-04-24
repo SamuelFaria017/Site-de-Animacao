@@ -6,6 +6,9 @@ import { Header } from '../../components/Header/Header';
 
 import sliders from '../../json/db.json'
 
+import Slide_0 from '../../assets/imgs/slides/Slide_0.jpg'
+import Slide_1 from '../../assets/imgs/slides/Slide_1.jpg'
+import Slide_2 from '../../assets/imgs/slides/Slide_2.jpg'
 
 export function Home() {
     const [indexSlider, setIndexSlider] = useState(0);
