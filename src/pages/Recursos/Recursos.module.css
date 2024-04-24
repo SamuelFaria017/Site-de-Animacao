@@ -38,3 +38,8 @@
 .table_td{
     border: 2px solid var(--yellow);
 }
+
+.audio{
+    margin-top: 50px;
+    margin-bottom: 100px;
+}

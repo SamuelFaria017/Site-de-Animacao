@@ -3,6 +3,8 @@ import styles from './Recursos.module.css';
 import { Container } from '../../components/Container/Container';
 import { Header } from '../../components/Header/Header';
 
+import audio_explicacao from '../../assets/audio/audio_explicação.m4a'
+
 export function Recursos() {
     return(
         <>
@@ -42,6 +44,10 @@ export function Recursos() {
                         </tr>
                     </tbody>
                 </table>
+
+                <audio className={styles.audio} controls>
+                    <source src={audio_explicacao}type="audio/mpeg"/>
+                </audio>
             </Container>
         </>
     );
