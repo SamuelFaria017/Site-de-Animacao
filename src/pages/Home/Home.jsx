@@ -12,6 +12,7 @@ import Slide_2 from '../../assets/imgs/slides/Slide_2.jpg'
 
 export function Home() {
     const [indexSlider, setIndexSlider] = useState(0);
+    const [image, setImage] = useState(Slide_0);
     
     const tempo_de_espera = 6000; // 6000ms / 1000 = 6s
 
@@ -21,6 +22,8 @@ export function Home() {
         if (indexSlider >= (sliders.length - 1)){
             setIndexSlider(0);
         }
+
+        setImage([Slide_0, Slide_1, Slide_2][indexSlider]);
       };
 
       useEffect(() => {
@@ -39,7 +42,7 @@ export function Home() {
                         <h2 className={styles.slider_description}>{sliders[indexSlider].descricao}</h2>
                     </div>   
                     <div className={styles.slider_container_image}>
-                        <img className={styles.image_slider} src={new URL(sliders[indexSlider].caminho_imagem, import.meta.url)}/>
+                        <img className={styles.image_slider} src={image}/>
                         <div className={styles.radio_slider}>
                             <div className={`${styles.radio} ${indexSlider === 0 ? styles.active : ''}`}>
                                 <div className={`${styles.radio_center} ${indexSlider === 0 ? styles.active : ''}`}/>
